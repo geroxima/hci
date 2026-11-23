@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ñangareko · Portafolio de diseño de interacción</title>
+  <meta name="description" content="Portafolio del proyecto Ñangareko: aplicación de rutinas y seguimiento para el cuidado de familiares.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="icon" href="img/LOGOMARK-ICON.png" type="image/png" sizes="40x40">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <a class="saltar" href="#contenido">Ir al contenido</a>
+
+  <header class="cabecera">
+    <div class="contenedor">
+      <a href="#portada" class="logo-horizontal">
+        <img src="img/HORIZONTAL-LOGO.png" alt="Ñangareko, volver al inicio del portafolio" width="254" height="48">
+      </a>
+    </div>
+  </header>
+
+  <main id="contenido">
+
+    <section id="portada" class="seccion" aria-labelledby="titulo-portada">
+      <div class="contenedor">
+        <img src="img/APP-LOGO.png" alt="Ícono de la aplicación Ñangareko" class="logo-app" width="64" height="64">
+        <p class="etiqueta">Interacción Hombre-Máquina · Séptimo semestre</p>
+        <h1 id="titulo-portada">Ñangareko</h1>
+        <p class="entradilla">Te ayudamos a cuidar a quienes más importan. Aplicación de rutinas y seguimiento para el cuidado integral de tus seres queridos.</p>
+
+        <figure class="figura figura-principal">
+          <img src="img/portada-producto-final.webp" alt="Mockup de la aplicación Ñangareko en un teléfono, con la pantalla principal de rutinas del día." width="1200" height="900">
+          <figcaption>Producto final (alta fidelidad).</figcaption>
+        </figure>
+
+        <dl class="ficha">
+          <div>
+            <dt>Problema</dt>
+            <dd>¿Cómo asegurar que el cuidador pueda estar tranquilo de que su familiar esté siendo bien cuidado cuando este no esté presente?</dd>
+          </div>
+          <div>
+            <dt>Para quién</dt>
+            <dd>Familiares que cuidan a una persona con necesidades médicas, físicas o terapéuticas, y las personas que los reemplazan en el cuidado.</dd>
+          </div>
+          <div>
+            <dt>Integrantes</dt>
+            <dd>
+              <ul class="lista-simple">
+                <li>Adán Alvarez</li>
+                <li>Christopher Mendoza</li>
+                <li>Alan Valenzuela</li>
+              </ul>
+            </dd>
+          </div>
+          <div>
+            <dt>Entrega</dt>
+            <dd>Parcial (secciones 1 a 6) · 9 de noviembre de 2026</dd>
+          </div>
+        </dl>
+
+        <nav aria-labelledby="titulo-indice" class="indice">
+          <h2 id="titulo-indice">Índice</h2>
+          <ol>
+            <li><a href="#investigacion">Investigación (Empatizar)</a></li>
+            <li><a href="#definicion">Definición del problema (Definir)</a></li>
+            <li><a href="#ideacion">Ideación (Idear)</a></li>
+            <li><a href="#prototipo">Evolución del prototipo (Prototipar)</a></li>
+            <li><a href="#evaluacion">Evaluaciones realizadas (Evaluar)</a></li>
+          </ol>
+        </nav>
+      </div>
+    </section>
+
+    <section id="investigacion" class="seccion" aria-labelledby="titulo-investigacion">
+      <div class="contenedor">
+        <h2 id="titulo-investigacion">2. Investigación (Empatizar)</h2>
+
+        <h3>Resumen</h3>
+        <p>El usuario identificado es una persona que tiene la tarea de cuidar a un familiar cercano que requiere necesidades médicas, físicas o terapéuticas y que le impiden cuidarse por su cuenta. Muchas personas temen no encontrar a alguien adecuado para dejar a cargo de su familiar y, si lo encuentran, siguen con ansiedad sobre si esa persona podrá cubrir sus necesidades de cuidado.</p>
+
+        <h3>Objetivos de la investigación</h3>
+        <ul>
+          <li>Reconocer si los cuidadores tienen problemas reales para buscar cuidadores externos.</li>
+          <li>Identificar si tenían problemas al dejar a sus familiares con terceros.</li>
+          <li>Hallar las raíces de esos problemas: falta de red de cuidadores, factores económicos y factores de confianza.</li>
+        </ul>
+
+        <h3>Métodos utilizados</h3>
+        <p>Usamos encuestas y entrevistas. Como no fue posible encontrar muchos cuidadores activos disponibles, recolectamos datos de dos grupos:</p>
+        <ul>
+          <li><strong>Cuidadores reales:</strong> 20 encuestados y 3 entrevistados.</li>
+          <li><strong>Personas no cuidadoras en escenario hipotético:</strong> 25 encuestados y 2 entrevistados.</li>
+        </ul>
+        <p>Los datos se clasificaron por grupo al analizarlos y se combinaron en los diagramas de afinidad y en las etapas posteriores. Usamos herramientas de IA en la codificación inductiva y en los diagramas de afinidad, según las guías de análisis de datos, para agrupar los datos por problemática.</p>
+
+        <h3>Principales hallazgos</h3>
+        <p>El análisis revela hallazgos clave sobre el rol del cuidador, sus barreras para delegar y la distancia entre lo que se espera y la práctica diaria.</p>
+
+        <div class="tabla-scroll" role="region" aria-labelledby="titulo-tabla-hallazgos" tabindex="0">
+          <table>
+            <caption id="titulo-tabla-hallazgos">Hallazgos de encuestas y entrevistas</caption>
+            <thead>
+              <tr>
+                <th scope="col">Fuente</th>
+                <th scope="col">Hallazgo</th>
+                <th scope="col">Dato</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Encuesta, cuidadores reales</th>
+                <td>Lo que más les aliviaría: una persona de apoyo extra para el cuidado físico</td>
+                <td>11 de 20</td>
+              </tr>
+              <tr>
+                <th scope="row">Encuesta, cuidadores reales</th>
+                <td>Dificultad alta (4 y 5) para encontrar bloques de tiempo en la agenda</td>
+                <td>9 de 20</td>
+              </tr>
+              <tr>
+                <th scope="row">Encuesta, cuidadores reales</th>
+                <td>Reorganizan su propio horario como primera acción (sueño, tiempo libre o permisos)</td>
+                <td>9 de 20</td>
+              </tr>
+              <tr>
+                <th scope="row">Encuesta, cuidadores reales</th>
+                <td>Piden ayuda a un familiar, vecino o amigo al delegar</td>
+                <td>9 de 20</td>
+              </tr>
+              <tr>
+                <th scope="row">Encuesta, cuidadores reales</th>
+                <td>El costo económico es la principal dificultad para delegar</td>
+                <td>7 de 20</td>
+              </tr>
+              <tr>
+                <th scope="row">Encuesta, cuidadores reales</th>
+                <td>No delegan por confianza o decisión propia (3 prefieren hacerlo ellos y 2 no confían)</td>
+                <td>5 de 20</td>
+              </tr>
+              <tr>
+                <th scope="row">Encuesta, hipotética</th>
+                <td>Lo que más les aliviaría: saber a distancia que las rutinas y cuidados médicos se cumplen</td>
+                <td>14 de 25</td>
+              </tr>
+              <tr>
+                <th scope="row">Encuesta, hipotética</th>
+                <td>Pedirían ayuda a un familiar, vecino o amigo si sus obligaciones chocan con el cuidado</td>
+                <td>12 de 25</td>
+              </tr>
+              <tr>
+                <th scope="row">Encuesta, hipotética</th>
+                <td>Usarían métodos escritos (notas, listas digitales, mensajes) para transmitir rutinas</td>
+                <td>17 de 25</td>
+              </tr>
+              <tr>
+                <th scope="row">Entrevistas</th>
+                <td>El rol de cuidador conlleva desgaste psicológico, necesidad de descanso o sacrificio de tiempo libre y vida social</td>
+                <td>5 de 5</td>
+              </tr>
+              <tr>
+                <th scope="row">Entrevistas</th>
+                <td>Se apoyarían principalmente en su círculo familiar íntimo por la alta confianza mutua</td>
+                <td>4 de 5</td>
+              </tr>
+              <tr>
+                <th scope="row">Entrevistas</th>
+                <td>Crearían listas, usarían alarmas o enviarían fotos explicativas para transmitir rutinas</td>
+                <td>3 de 5</td>
+              </tr>
+              <tr>
+                <th scope="row">Entrevistas</th>
+                <td>Preocupación e insatisfacción por el desempeño de cuidadores externos</td>
+                <td>3 de 5</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>Citas de las entrevistas</h3>
+        <figure>
+          <blockquote>
+            <p>“...nadie te dice cuánto te va a afectar psicológicamente estar tan cerca del paciente y tener que fingir que estás bien para no ponerle mal a él.”</p>
+          </blockquote>
+          <figcaption>Entrevista, participante sobre el desgaste del rol de cuidador.</figcaption>
+        </figure>
+        <figure>
+          <blockquote>
+            <p>“Ya hemos llegado a contratar a cuidadoras para eso, pero nunca es fácil. Es difícil encontrar gente de confianza y con la que te sientas por lo menos un poco tranquila. (...) Nunca cumplen las expectativas.”</p>
+          </blockquote>
+          <figcaption>Entrevista, participante sobre cuidadores externos.</figcaption>
+        </figure>
+        <figure>
+          <blockquote>
+            <p>“Una lista de cosas si o si, con explicaciones en audios de todito por su whatsapp con foto y dibujo luego si hace falta para que sea dificil luego equivocarse y poner todo alarma y eso también para los recordatorios.”</p>
+          </blockquote>
+          <figcaption>Entrevista, participante sobre cómo transmitir las rutinas.</figcaption>
+        </figure>
+
+        <h3>Mapa de afinidad</h3>
+        <figure class="figura">
+          <img src="img/mapa-afinidad.webp" alt="Mapa de afinidad con los datos de encuestas y entrevistas agrupados por temas como delegación, confianza, tiempo y desgaste." width="1600" height="1000">
+          <figcaption>Mapa de afinidad de los datos combinados de cuidadores reales e hipotéticos.</figcaption>
+        </figure>
+
+        <h3>Insights</h3>
+        <div class="tarjeta">
+          <p class="titular"><strong>Titular:</strong> La carga de cuidar genera un desgaste significativo en los familiares, quienes necesitan apoyo pero desconfían de delegar el cuidado a otros.</p>
+          <p><strong>¿Qué observamos?</strong> Los cuidadores desean aliviar su carga. Encargarlo a otra persona se presenta como una solución, pero no termina de satisfacer sus necesidades ni de aliviar su ansiedad.</p>
+          <p><strong>¿Por qué importa?</strong> Si los cuidadores no confían en sus personas de apoyo, pueden dejar de pedir ayuda y seguir cargando con responsabilidades que afectan su salud física y mental a largo plazo.</p>
+          <p><strong>¿Qué no sabemos todavía con certeza?</strong> Si el nivel de confianza cambia cuando el cuidador es desconocido frente a cuando es un familiar o conocido.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="definicion" class="seccion" aria-labelledby="titulo-definicion">
+      <div class="contenedor">
+        <h2 id="titulo-definicion">3. Definición del problema (Definir)</h2>
+
+        <h3>Evidencia</h3>
+        <figure>
+          <blockquote>
+            <p>“Y sí, siempre es cuando uno se acostumbra a estar con el familiar y es muy apegado, siempre quiere ser uno nomás. Lo que esté haciendo todo, pero a veces pues es difícil, no se puede. A veces también es un poco porque uno quiere descansar un poquito.”</p>
+          </blockquote>
+          <figcaption>Entrevista 1, Alma.</figcaption>
+        </figure>
+        <figure>
+          <blockquote>
+            <p>“Cuando lo cuido yo misma, tengo cierta tranquilidad de saber que está bien, pero me preocupa, por ejemplo, tener que cargarlo yo sola o auxiliarlo en caso de urgencia con mi edad. Cuando lo cuida alguien más, tengo que estar igualmente pendiente de que esta persona esté haciendo un buen trabajo.”</p>
+          </blockquote>
+          <figcaption>Entrevista 3, Sara.</figcaption>
+        </figure>
+
+        <h3>Punto de vista (POV)</h3>
+        <p>Los familiares de personas con necesidad de cuidados constantes necesitan sentirse tranquilos al dejar a sus familiares a cargo de otras personas, debido al temor constante de que la inexperiencia del tercero ponga en riesgo la salud del paciente.</p>
+
+        <h3>¿Cómo podríamos?</h3>
+        <p>¿Cómo podríamos darle a las personas la tranquilidad de saber que sus familiares están en buenas manos?</p>
+
+        <h3>Historias de usuario</h3>
+        <ul>
+          <li>Como cuidador quiero mantenerme al tanto del estado de salud de mi ser querido para estar tranquilo durante mi ausencia.</li>
+          <li>Como cuidador quiero poder planificar y visualizar un calendario de rutinas estricto para mi ser querido para asegurarme de su bienestar.</li>
+          <li>Como cuidador quiero poder comunicar a otros cuidadores sobre las rutinas y necesidades de mi familiar para garantizar la calidad de su atención durante mi ausencia.</li>
+        </ul>
+
+        <h3>Requisitos</h3>
+        <h4>Requisitos funcionales y hallazgo de origen</h4>
+        <div class="tabla-scroll" role="region" aria-labelledby="titulo-tabla-requisitos" tabindex="0">
+          <table>
+            <caption id="titulo-tabla-requisitos">Requisitos funcionales y hallazgos que los originan</caption>
+            <thead>
+              <tr>
+                <th scope="col">N.º</th>
+                <th scope="col">Requisito</th>
+                <th scope="col">Hallazgo de origen</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">RF1</th>
+                <td>Registrar el cumplimiento de rutinas, como la toma de medicamentos.</td>
+                <td>17 de 25 usarían métodos escritos; 14 de 25 quieren saber a distancia que se cumplen las rutinas.</td>
+              </tr>
+              <tr>
+                <th scope="row">RF2</th>
+                <td>Notificar al cuidador cuando se realicen rutinas con un cuidador externo.</td>
+                <td>14 de 25 quieren saber a distancia que se cumplen las rutinas; 3 de 5 se preocupan por supervisar.</td>
+              </tr>
+              <tr>
+                <th scope="row">RF3</th>
+                <td>Permitir al cuidador externo ingresar observaciones breves (estado de ánimo, síntomas) al registrar una rutina.</td>
+                <td>3 de 5 se preocupan por el desempeño de los cuidadores externos.</td>
+              </tr>
+              <tr>
+                <th scope="row">RF4</th>
+                <td>Crear, modificar y eliminar eventos en la agenda diaria del paciente.</td>
+                <td>9 de 20 tienen dificultad para encontrar bloques de tiempo; 3 de 5 usan listas y recordatorios.</td>
+              </tr>
+              <tr>
+                <th scope="row">RF5</th>
+                <td>Vista de calendario diaria y semanal con colores para completada, pendiente y atrasada.</td>
+                <td>9 de 20 tienen dificultad para encontrar bloques de tiempo en la agenda.</td>
+              </tr>
+              <tr>
+                <th scope="row">RF6</th>
+                <td>Adjuntar notas, imágenes o audios cortos a las instrucciones de cada rutina.</td>
+                <td>3 de 5 enviarían fotos explicativas o audios; 17 de 25 usarían métodos escritos.</td>
+              </tr>
+              <tr>
+                <th scope="row">RF7</th>
+                <td>Mostrar un indicador "visto" con la hora en que el cuidador externo abrió la rutina.</td>
+                <td>3 de 5 se preocupan por supervisar a los cuidadores externos.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h4>Requisitos no funcionales</h4>
+        <ul>
+          <li><strong>Datos:</strong> los datos médicos y personales sensibles deben estar encriptados en la base de datos. El historial de cuidados se conserva al menos 12 meses.</li>
+          <li><strong>Entorno:</strong> uso principal en smartphones, dentro del hogar (Wi-Fi) y en exteriores.</li>
+          <li><strong>Cuidadores principales:</strong> pueden ser adultos mayores sin conocimientos técnicos avanzados, por lo que se requiere tipografía legible con tamaño ajustable y alto contraste.</li>
+          <li><strong>Cuidadores externos:</strong> alta rotación, por lo que no deben necesitar una capacitación compleja para el uso diario.</li>
+          <li><strong>Eficiencia:</strong> un cuidador externo debe marcar una rutina como completada en un máximo de 3 toques desde la pantalla principal.</li>
+          <li><strong>Curva de aprendizaje:</strong> un usuario nuevo debe crear una rutina en menos de 2 minutos en su primer uso.</li>
+        </ul>
+
+      </div>
+    </section>
+
+    <section id="ideacion" class="seccion" aria-labelledby="titulo-ideacion">
+      <div class="contenedor">
+        <h2 id="titulo-ideacion">4. Ideación (Idear)</h2>
+
+        <h3>Lluvia de ideas y Crazy 8s</h3>
+        <figure class="figura">
+          <img src="img/crazy-8s.webp" alt="Hojas de Crazy 8s con bocetos rápidos de distintas interfaces para la aplicación." width="1600" height="1000">
+          <figcaption>Crazy 8s del equipo.</figcaption>
+        </figure>
+
+        <h3>Ideas consideradas y elección</h3>
+        <p>Elegimos una aplicación móvil porque era la opción más rápida de desarrollar y la más práctica para este tipo de funciones.</p>
+        <p>Se consideraron distintas interfaces. Elegimos una interfaz limpia y minimalista, guiada por una barra inferior que separa las secciones de la aplicación, con un asistente virtual basado en un chatbot de inteligencia artificial.</p>
+      </div>
+    </section>
+
+    <section id="prototipo" class="seccion" aria-labelledby="titulo-prototipo">
+      <div class="contenedor">
+        <h2 id="titulo-prototipo">5. Evolución del prototipo (Prototipar)</h2>
+
+        <h3>Sistema de diseño</h3>
+        <p>Usamos la paleta Índigo suave del sistema de diseño, con contraste WCAG 2.1 AA: texto normal de al menos 4,5:1 sobre blanco.</p>
+
+        <h4>Colores</h4>
+        <div class="tabla-scroll" role="region" aria-labelledby="titulo-tabla-colores" tabindex="0">
+          <table>
+            <caption id="titulo-tabla-colores">Colores del sistema de diseño</caption>
+            <thead>
+              <tr>
+                <th scope="col">Rol</th>
+                <th scope="col">Color</th>
+                <th scope="col">Contraste sobre blanco</th>
+                <th scope="col">Uso</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Acción</th>
+                <td><span class="muestra sw-accion" aria-hidden="true"></span> #5755A1</td>
+                <td>6,52:1</td>
+                <td>Acción principal.</td>
+              </tr>
+              <tr>
+                <th scope="row">Texto principal</th>
+                <td><span class="muestra sw-texto" aria-hidden="true"></span> #29283E</td>
+                <td>14,31:1</td>
+                <td>Datos, horarios e indicaciones.</td>
+              </tr>
+              <tr>
+                <th scope="row">Texto secundario</th>
+                <td><span class="muestra sw-texto-2" aria-hidden="true"></span> #575269</td>
+                <td>7,46:1</td>
+                <td>Contexto y ayudas.</td>
+              </tr>
+              <tr>
+                <th scope="row">Bordes</th>
+                <td><span class="muestra sw-bordes" aria-hidden="true"></span> #706B85</td>
+                <td>5,08:1</td>
+                <td>Controles y tarjetas.</td>
+              </tr>
+              <tr>
+                <th scope="row">Fondo</th>
+                <td><span class="muestra sw-fondo" aria-hidden="true"></span> #FFFFFF</td>
+                <td>Base blanca</td>
+                <td>Base de la interfaz.</td>
+              </tr>
+              <tr>
+                <th scope="row">Error</th>
+                <td><span class="muestra sw-error" aria-hidden="true"></span> #B53245</td>
+                <td>5,99:1</td>
+                <td>Indica qué corregir, con mensaje explícito.</td>
+              </tr>
+              <tr>
+                <th scope="row">Éxito</th>
+                <td><span class="muestra sw-exito" aria-hidden="true"></span> #287654</td>
+                <td>5,51:1</td>
+                <td>Confirma lo guardado, con etiqueta clara.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h4>Tipografía y espaciado</h4>
+        <ul>
+          <li><strong>Familia:</strong> Inter, Regular y Semi Bold.</li>
+          <li><strong>Título:</strong> 32/40, Semi Bold.</li>
+          <li><strong>Cuerpo:</strong> 16/24, Regular.</li>
+          <li><strong>Etiqueta:</strong> 14/24, Medium.</li>
+          <li><strong>Espaciado:</strong> unidad base de 8 pt (8, 16, 24, 32, 40, 48 y 64).</li>
+        </ul>
+
+        <h4>Botones</h4>
+        <div class="botones-muestra">
+          <p><span class="boton boton-primario">Registrar cuidado</span> Primario: completar la tarea.</p>
+          <p><span class="boton boton-secundario">Ver historial</span> Secundario: consultar.</p>
+          <p><span class="boton boton-terciario">Cancelar</span> Terciario: salir sin competir.</p>
+        </div>
+        <p>Los botones miden 48 pt de alto, con radio de 8 pt y un solo botón primario por bloque de decisión.</p>
+
+        <h4>Mensajes de estado</h4>
+        <div class="mensajes">
+          <p class="mensaje mensaje-exito"><strong>Éxito · Registro guardado.</strong> El cuidado quedó registrado a las 10:30.</p>
+          <p class="mensaje mensaje-error"><strong>Error · Revisá la hora.</strong> Ingresá una hora válida en formato HH:MM.</p>
+        </div>
+
+        <h3>Evolución por tarea</h3>
+        <p>Para cada tarea se muestran tres etapas: papel, wireframe y alta fidelidad. Después de cada tarea se explica qué cambió y por qué.</p>
+
+        <h4>T1. Registrar al paciente</h4>
+        <div class="etapas">
+          <figure class="figura">
+            <img src="img/t1-papel.webp" alt="Boceto en papel de la pantalla para registrar al paciente." width="800" height="600">
+            <figcaption>Papel</figcaption>
+          </figure>
+          <figure class="figura">
+            <img src="img/t1-wireframe.webp" alt="Wireframe de la pantalla para registrar al paciente." width="800" height="600">
+            <figcaption>Wireframe</figcaption>
+          </figure>
+          <figure class="figura">
+            <img src="img/t1-alta.webp" alt="Pantalla de alta fidelidad para registrar al paciente." width="800" height="600">
+            <figcaption>Alta fidelidad</figcaption>
+          </figure>
+        </div>
+        <p><strong>Qué cambió y por qué:</strong> En la prueba, 2 de 3 participantes no encontraron el apartado para registrar un paciente. Se agregó un botón "Nuevo Paciente" fuera del selector de pacientes (problema 4, severidad alta).</p>
+
+        <h4>T2. Definir rutinas en diferentes áreas</h4>
+        <div class="etapas">
+          <figure class="figura">
+            <img src="img/t2-papel.webp" alt="Boceto en papel de la pantalla con opciones de rutinas." width="800" height="600">
+            <figcaption>Papel</figcaption>
+          </figure>
+          <figure class="figura">
+            <img src="img/t2-wireframe.webp" alt="Wireframe de la pantalla de rutinas con el calendario desplegado." width="800" height="600">
+            <figcaption>Wireframe</figcaption>
+          </figure>
+          <figure class="figura">
+            <img src="img/t2-alta.webp" alt="Pantalla de alta fidelidad de rutinas con el calendario plegado." width="800" height="600">
+            <figcaption>Alta fidelidad</figcaption>
+          </figure>
+        </div>
+        <p><strong>Qué cambió y por qué:</strong> El botón "Nueva Rutina" quedaba escondido y el calendario ocupaba demasiado espacio. El cambio propuesto es mantener el calendario plegado por defecto para que el botón quede a la vista (problema 1, severidad media).</p>
+
+        <h4>T3. Definir rutina de medicamentos</h4>
+        <div class="etapas">
+          <figure class="figura">
+            <img src="img/t3-papel.webp" alt="Boceto en papel del formulario de rutina de medicamentos." width="800" height="600">
+            <figcaption>Papel</figcaption>
+          </figure>
+          <figure class="figura">
+            <img src="img/t3-wireframe.webp" alt="Wireframe del formulario de rutina de medicamentos." width="800" height="600">
+            <figcaption>Wireframe</figcaption>
+          </figure>
+          <figure class="figura">
+            <img src="img/t3-alta.webp" alt="Pantalla de alta fidelidad del formulario de medicamentos." width="800" height="600">
+            <figcaption>Alta fidelidad</figcaption>
+          </figure>
+        </div>
+        <p><strong>Qué cambió y por qué:</strong> La prueba no encontró errores (3 de 3 completaron, facilidad 6,3 de 7). Queda pendiente la sugerencia de un participante de calcular los horarios de toma según cada cuántas horas se toma el medicamento.</p>
+
+        <h4>T4. Definir rutinas de control</h4>
+        <div class="etapas">
+          <figure class="figura">
+            <img src="img/t4-papel.webp" alt="Boceto en papel de la rutina de control de presión y glucosa." width="800" height="600">
+            <figcaption>Papel</figcaption>
+          </figure>
+          <figure class="figura">
+            <img src="img/t4-wireframe.webp" alt="Wireframe de la rutina de control, con la opción de medición." width="800" height="600">
+            <figcaption>Wireframe</figcaption>
+          </figure>
+          <figure class="figura">
+            <img src="img/t4-alta.webp" alt="Pantalla de alta fidelidad de la rutina de control." width="800" height="600">
+            <figcaption>Alta fidelidad</figcaption>
+          </figure>
+        </div>
+        <p><strong>Qué cambió y por qué:</strong> Un participante no identificó que el control se agrega como una nueva rutina y exploró la aplicación para encontrarlo. El cambio propuesto es un mensaje con una flecha "Añadir medición" en las rutinas que lo requieran (problema 2, severidad baja).</p>
+
+        <h4>T5. Definir rutinas de aseo, comida y quehaceres</h4>
+        <div class="etapas">
+          <figure class="figura">
+            <img src="img/t5-papel.webp" alt="Boceto en papel del formulario de rutinas de aseo, comida y quehaceres." width="800" height="600">
+            <figcaption>Papel</figcaption>
+          </figure>
+          <figure class="figura">
+            <img src="img/t5-wireframe.webp" alt="Wireframe del formulario de rutinas de aseo, comida y quehaceres." width="800" height="600">
+            <figcaption>Wireframe</figcaption>
+          </figure>
+          <figure class="figura">
+            <img src="img/t5-alta.webp" alt="Pantalla de alta fidelidad del formulario de rutinas de aseo, comida y quehaceres." width="800" height="600">
+            <figcaption>Alta fidelidad</figcaption>
+          </figure>
+        </div>
+        <p><strong>Qué cambió y por qué:</strong> Sin problemas en la prueba (3 de 3 completaron, facilidad 7 de 7). No hubo cambios.</p>
+
+        <h4>T6. Ver rutinas</h4>
+        <div class="etapas">
+          <figure class="figura">
+            <img src="img/t6-papel.webp" alt="Boceto en papel de la pantalla de rutinas del día." width="800" height="600">
+            <figcaption>Papel</figcaption>
+          </figure>
+          <figure class="figura">
+            <img src="img/t6-wireframe.webp" alt="Wireframe de la pantalla de rutinas del día." width="800" height="600">
+            <figcaption>Wireframe</figcaption>
+          </figure>
+          <figure class="figura">
+            <img src="img/t6-alta.webp" alt="Pantalla de alta fidelidad de rutinas del día." width="800" height="600">
+            <figcaption>Alta fidelidad</figcaption>
+          </figure>
+        </div>
+        <p><strong>Qué cambió y por qué:</strong> Sin problemas en la prueba (3 de 3 completaron, tiempo promedio de 6,7 s). No hubo cambios.</p>
+
+        <h4>T7. Completar rutinas</h4>
+        <div class="etapas">
+          <figure class="figura">
+            <img src="img/t7-papel.webp" alt="Boceto en papel de la acción para marcar una rutina como completada." width="800" height="600">
+            <figcaption>Papel</figcaption>
+          </figure>
+          <figure class="figura">
+            <img src="img/t7-wireframe.webp" alt="Wireframe con el botón más para completar rutinas." width="800" height="600">
+            <figcaption>Wireframe</figcaption>
+          </figure>
+          <figure class="figura">
+            <img src="img/t7-alta.webp" alt="Pantalla de alta fidelidad para marcar una rutina como completada." width="800" height="600">
+            <figcaption>Alta fidelidad</figcaption>
+          </figure>
+        </div>
+        <p><strong>Qué cambió y por qué:</strong> El botón "+" era ambiguo. Se propuso separar las acciones en "Añadir rutina", "Registrar control" y "Añadir observación". En la prueba, 2 participantes confundieron "crear una rutina" con "marcarla como hecha", por la similitud entre "quehacer" y "rutina". Este hallazgo está pendiente de decisión.</p>
+
+        <h4>T8. Consultar al Super Asistente</h4>
+        <div class="etapas">
+          <figure class="figura">
+            <img src="img/t8-papel.webp" alt="Boceto en papel del chat con el asistente." width="800" height="600">
+            <figcaption>Papel</figcaption>
+          </figure>
+          <figure class="figura">
+            <img src="img/t8-wireframe.webp" alt="Wireframe del chat con el asistente." width="800" height="600">
+            <figcaption>Wireframe</figcaption>
+          </figure>
+          <figure class="figura">
+            <img src="img/t8-alta.webp" alt="Pantalla de alta fidelidad del chat con el asistente." width="800" height="600">
+            <figcaption>Alta fidelidad</figcaption>
+          </figure>
+        </div>
+        <p><strong>Qué cambió y por qué:</strong> Sin problemas en la prueba (3 de 3 completaron, facilidad 7 de 7). No hubo cambios.</p>
+
+        <h4>T9. Acceder a las asistencias predefinidas</h4>
+        <div class="etapas">
+          <figure class="figura">
+            <img src="img/t9-papel.webp" alt="Boceto en papel de las preguntas predefinidas del asistente." width="800" height="600">
+            <figcaption>Papel</figcaption>
+          </figure>
+          <figure class="figura">
+            <img src="img/t9-wireframe.webp" alt="Wireframe con los chats rápidos precargados." width="800" height="600">
+            <figcaption>Wireframe</figcaption>
+          </figure>
+          <figure class="figura">
+            <img src="img/t9-alta.webp" alt="Pantalla de alta fidelidad con los chats rápidos precargados." width="800" height="600">
+            <figcaption>Alta fidelidad</figcaption>
+          </figure>
+        </div>
+        <p><strong>Qué cambió y por qué:</strong> Ningún participante usó los chats rápidos precargados. Lo atribuimos a una tarea poco clara y a que el acceso directo al chat del asistente era más rápido.</p>
+
+        <h4>T10. Registrar cuidadores</h4>
+        <div class="etapas">
+          <figure class="figura">
+            <img src="img/t10-papel.webp" alt="Boceto en papel del formulario para registrar un cuidador." width="800" height="600">
+            <figcaption>Papel</figcaption>
+          </figure>
+          <figure class="figura">
+            <img src="img/t10-wireframe.webp" alt="Wireframe del formulario para registrar un cuidador, con lista de pacientes." width="800" height="600">
+            <figcaption>Wireframe</figcaption>
+          </figure>
+          <figure class="figura">
+            <img src="img/t10-alta.webp" alt="Pantalla de alta fidelidad del formulario para registrar un cuidador." width="800" height="600">
+            <figcaption>Alta fidelidad</figcaption>
+          </figure>
+        </div>
+        <p><strong>Qué cambió y por qué:</strong> Los 3 participantes confundieron al paciente con el cuidador, y no quedaba claro que la búsqueda se hace por CI. Se cambió la etiqueta a "Número de cédula del Cuidador" y se eliminó la lista de pacientes: el cuidador queda asignado al paciente seleccionado antes de entrar al menú (problema 3, severidad alta).</p>
+
+        <h4>T11. Administrar pacientes</h4>
+        <div class="etapas">
+          <figure class="figura">
+            <img src="img/t11-papel.webp" alt="Boceto en papel de la ficha del paciente." width="800" height="600">
+            <figcaption>Papel</figcaption>
+          </figure>
+          <figure class="figura">
+            <img src="img/t11-wireframe.webp" alt="Wireframe de la ficha del paciente con selector de paciente." width="800" height="600">
+            <figcaption>Wireframe</figcaption>
+          </figure>
+          <figure class="figura">
+            <img src="img/t11-alta.webp" alt="Pantalla de alta fidelidad con el botón Nuevo Paciente junto al selector." width="800" height="600">
+            <figcaption>Alta fidelidad</figcaption>
+          </figure>
+        </div>
+        <p><strong>Qué cambió y por qué:</strong> Un participante preguntó cómo cambiar de paciente y no le resultó claro. Se agregó un botón "Nuevo Paciente" fuera del selector (problema 4, severidad alta).</p>
+
+        <p>Enlace al prototipo de alta fidelidad: pendiente de publicar.</p>
+      </div>
+    </section>
+
+    <section id="evaluacion" class="seccion" aria-labelledby="titulo-evaluacion">
+      <div class="contenedor">
+        <h2 id="titulo-evaluacion">6. Evaluaciones realizadas (Evaluar)</h2>
+
+        <h3>Recorrido cognitivo y evaluación heurística (papel)</h3>
+        <p>La evaluación por inspección dejó 5 problemas predichos. La tabla compara cada predicción con lo que ocurrió en la prueba con wireframes.</p>
+        <div class="tabla-scroll" role="region" aria-labelledby="titulo-tabla-predichos" tabindex="0">
+          <table>
+            <caption id="titulo-tabla-predichos">Problemas predichos en la evaluación por inspección</caption>
+            <thead>
+              <tr>
+                <th scope="col">N.º</th>
+                <th scope="col">Problema predicho</th>
+                <th scope="col">Decisión del equipo</th>
+                <th scope="col">¿Se confirmó?</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Dificultad para encontrar la configuración y el acceso a "Familia".</td>
+                <td>Cambiar el ícono del menú inferior y eliminar opciones del menú.</td>
+                <td>Sí</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>No se identifica cómo modificar o eliminar rutinas existentes.</td>
+                <td>Agregar acciones visibles "Editar" y "Eliminar" con confirmación antes de eliminar.</td>
+                <td>Sí</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Ambigüedad del botón "+" al completar rutinas.</td>
+                <td>Separar en "Añadir rutina", "Registrar control" y "Añadir observación".</td>
+                <td>No</td>
+              </tr>
+              <tr>
+                <th scope="row">4</th>
+                <td>Inconsistencia en los botones para guardar formularios.</td>
+                <td>Unificar la presentación y el comportamiento de guardar y cancelar.</td>
+                <td>Sí</td>
+              </tr>
+              <tr>
+                <th scope="row">5</th>
+                <td>Teclado numérico dibujado dentro de la interfaz.</td>
+                <td>Activar el teclado nativo del dispositivo con una etiqueta clara.</td>
+                <td>Sí</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>Prueba de usabilidad con wireframes</h3>
+        <h4>Objetivo y participantes</h4>
+        <p>El objetivo fue identificar los principales problemas de usabilidad. Participaron 3 personas que no conocían el producto y que no integran el equipo ni participaron en la evaluación en papel. Ninguna había tenido a su cargo a una persona que necesitara cuidados constantes.</p>
+        <div class="tabla-scroll" role="region" aria-labelledby="titulo-tabla-participantes" tabindex="0">
+          <table>
+            <caption id="titulo-tabla-participantes">Participantes de la prueba</caption>
+            <thead>
+              <tr>
+                <th scope="col">Participante</th>
+                <th scope="col">Perfil</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">P1</th>
+                <td>23 años. Estudiante de Ingeniería Informática y profesora de inglés.</td>
+              </tr>
+              <tr>
+                <th scope="row">P2</th>
+                <td>21 años. Estudiante de Ingeniería Informática.</td>
+              </tr>
+              <tr>
+                <th scope="row">P3</th>
+                <td>21 años. Estudiante de Ingeniería Informática con trabajo de medio tiempo.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h4>Resultados por tarea</h4>
+        <div class="tabla-scroll" role="region" aria-labelledby="titulo-tabla-resultados" tabindex="0">
+          <table>
+            <caption id="titulo-tabla-resultados">Resultados por tarea (3 participantes)</caption>
+            <thead>
+              <tr>
+                <th scope="col">Tarea</th>
+                <th scope="col">Completaron</th>
+                <th scope="col">Tiempo promedio</th>
+                <th scope="col">Errores</th>
+                <th scope="col">Pedidos de ayuda</th>
+                <th scope="col">Facilidad (1–7)</th>
+                <th scope="col">Comentario</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">T1. Registrar al paciente</th>
+                <td>1 de 3</td>
+                <td>30 s (solo P2)</td>
+                <td>2</td>
+                <td>2</td>
+                <td>2,3</td>
+                <td>P1 y P3 no encontraron el apartado. Es la tarea más crítica.</td>
+              </tr>
+              <tr>
+                <th scope="row">T2. Definir rutinas en diferentes áreas</th>
+                <td>3 de 3</td>
+                <td>71,7 s</td>
+                <td>0</td>
+                <td>0</td>
+                <td>5,3</td>
+                <td>Botón "Nueva Rutina" escondido y calendario grande.</td>
+              </tr>
+              <tr>
+                <th scope="row">T3. Definir rutina de medicamentos</th>
+                <td>3 de 3</td>
+                <td>40 s</td>
+                <td>0</td>
+                <td>0</td>
+                <td>6,3</td>
+                <td>Código del medicamento confuso; pedido de horarios automáticos.</td>
+              </tr>
+              <tr>
+                <th scope="row">T4. Definir rutinas de control</th>
+                <td>3 de 3</td>
+                <td>53,3 s</td>
+                <td>1</td>
+                <td>1</td>
+                <td>6,0</td>
+                <td>P2 no identificó que se agrega como nueva rutina.</td>
+              </tr>
+              <tr>
+                <th scope="row">T5. Definir rutinas de aseo, comida y quehaceres</th>
+                <td>3 de 3</td>
+                <td>25 s</td>
+                <td>0</td>
+                <td>0</td>
+                <td>7,0</td>
+                <td>Sin problemas.</td>
+              </tr>
+              <tr>
+                <th scope="row">T6. Ver rutinas</th>
+                <td>3 de 3</td>
+                <td>6,7 s</td>
+                <td>0</td>
+                <td>0</td>
+                <td>7,0</td>
+                <td>Sin problemas.</td>
+              </tr>
+              <tr>
+                <th scope="row">T7. Completar rutinas</th>
+                <td>1 completa, 2 parciales</td>
+                <td>21,7 s</td>
+                <td>2</td>
+                <td>0</td>
+                <td>5,0</td>
+                <td>Confusión entre crear y marcar rutinas.</td>
+              </tr>
+              <tr>
+                <th scope="row">T8. Consultar al Super Asistente</th>
+                <td>3 de 3</td>
+                <td>18,3 s</td>
+                <td>0</td>
+                <td>0</td>
+                <td>7,0</td>
+                <td>Sin problemas.</td>
+              </tr>
+              <tr>
+                <th scope="row">T9. Acceder a las asistencias predefinidas</th>
+                <td>3 de 3</td>
+                <td>26,7 s</td>
+                <td>0</td>
+                <td>0</td>
+                <td>7,0</td>
+                <td>Nadie usó los chats rápidos precargados.</td>
+              </tr>
+              <tr>
+                <th scope="row">T10. Registrar cuidadores</th>
+                <td>3 de 3</td>
+                <td>56,7 s</td>
+                <td>0</td>
+                <td>5</td>
+                <td>3,7</td>
+                <td>Confusión entre paciente y cuidador. Es la tarea con más pedidos de ayuda.</td>
+              </tr>
+              <tr>
+                <th scope="row">T11. Administrar pacientes</th>
+                <td>3 de 3</td>
+                <td>48,3 s</td>
+                <td>0</td>
+                <td>1</td>
+                <td>6,0</td>
+                <td>No quedó claro cómo cambiar de paciente.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h4>Problemas consolidados y priorizados</h4>
+        <div class="tabla-scroll" role="region" aria-labelledby="titulo-tabla-problemas" tabindex="0">
+          <table>
+            <caption id="titulo-tabla-problemas">Problemas consolidados y priorizados</caption>
+            <thead>
+              <tr>
+                <th scope="col">N.º</th>
+                <th scope="col">Problema</th>
+                <th scope="col">Pantalla</th>
+                <th scope="col">Participantes (de 3)</th>
+                <th scope="col">Severidad</th>
+                <th scope="col">¿Ya estaba?</th>
+                <th scope="col">Cambio</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>El botón "Nueva Rutina" queda escondido, el calendario ocupa demasiado espacio y no queda claro cómo cambiar de paciente.</td>
+                <td>Rutinas</td>
+                <td>2</td>
+                <td>Media</td>
+                <td>No</td>
+                <td>Mantener el calendario plegado por defecto.</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>No se sabe dónde cargar controles específicos, como presión o glucosa.</td>
+                <td>Rutinas e inicio</td>
+                <td>1</td>
+                <td>Baja</td>
+                <td>Sí</td>
+                <td>Mensaje con flecha "Añadir medición".</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Confusión entre paciente y cuidador al registrar cuidadores, y no queda claro que el CI es el del cuidador.</td>
+                <td>Registrar cuidadores</td>
+                <td>3</td>
+                <td>Alta</td>
+                <td>No</td>
+                <td>Etiqueta "Número de cédula del Cuidador" y eliminar la lista de pacientes.</td>
+              </tr>
+              <tr>
+                <th scope="row">4</th>
+                <td>Gran dificultad para encontrar la sección para registrar pacientes.</td>
+                <td>Inicio y "Gestionar"</td>
+                <td>3</td>
+                <td>Alta</td>
+                <td>No</td>
+                <td>Botón "Nuevo Paciente" fuera del selector.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h4>Comparación con la evaluación anterior</h4>
+        <p>Se confirmaron 4 de los 5 problemas predichos (1, 2, 4 y 5). El problema 3 (ambigüedad del botón "+") no apareció en la prueba. Aparecieron problemas nuevos: el registro de pacientes no se encontraba (T1), la confusión entre paciente y cuidador al registrar por CI (T10), la confusión entre crear y marcar rutinas (T7) y la dificultad para cambiar de paciente (T11).</p>
+
+        <h4>Cambios aplicados</h4>
+        <p>Antes de corregir se guardó una copia de la versión probada. Luego se aplicaron los cambios de severidad alta (problemas 3 y 4). Esa versión corregida es la base del prototipo de alta fidelidad.</p>
+        <p>Enlace al wireframe corregido: pendiente de publicar.</p>
+
+        <div class="cambios">
+          <article class="cambio">
+            <h5>Problema 1. Pantalla de rutinas</h5>
+            <div class="antes-despues">
+              <figure class="figura">
+                <img src="img/cambio-1-antes.webp" alt="Pantalla de rutinas antes del cambio, con el calendario desplegado y el botón Nueva Rutina escondido." width="800" height="600">
+                <figcaption>Antes</figcaption>
+              </figure>
+              <figure class="figura">
+                <img src="img/cambio-1-despues.webp" alt="Pantalla de rutinas después del cambio, con el calendario plegado y el botón Nueva Rutina visible." width="800" height="600">
+                <figcaption>Después</figcaption>
+              </figure>
+            </div>
+          </article>
+          <article class="cambio">
+            <h5>Problema 2. Rutinas e inicio</h5>
+            <div class="antes-despues">
+              <figure class="figura">
+                <img src="img/cambio-2-antes.webp" alt="Pantalla de rutinas antes del cambio, sin mensaje para añadir medición." width="800" height="600">
+                <figcaption>Antes</figcaption>
+              </figure>
+              <figure class="figura">
+                <img src="img/cambio-2-despues.webp" alt="Pantalla de rutinas después del cambio, con el mensaje Añadir medición y su flecha." width="800" height="600">
+                <figcaption>Después</figcaption>
+              </figure>
+            </div>
+          </article>
+          <article class="cambio">
+            <h5>Problema 3. Registrar cuidadores</h5>
+            <div class="antes-despues">
+              <figure class="figura">
+                <img src="img/cambio-3-antes.webp" alt="Formulario de registro de cuidadores antes del cambio, con lista de pacientes." width="800" height="600">
+                <figcaption>Antes</figcaption>
+              </figure>
+              <figure class="figura">
+                <img src="img/cambio-3-despues.webp" alt="Formulario de registro de cuidadores después del cambio, con el campo Número de cédula del Cuidador." width="800" height="600">
+                <figcaption>Después</figcaption>
+              </figure>
+            </div>
+          </article>
+          <article class="cambio">
+            <h5>Problema 4. Pantalla inicial y "Gestionar"</h5>
+            <div class="antes-despues">
+              <figure class="figura">
+                <img src="img/cambio-4-antes.webp" alt="Pantalla inicial antes del cambio, sin botón para registrar un nuevo paciente." width="800" height="600">
+                <figcaption>Antes</figcaption>
+              </figure>
+              <figure class="figura">
+                <img src="img/cambio-4-despues.webp" alt="Pantalla inicial después del cambio, con el botón Nuevo Paciente fuera del selector." width="800" height="600">
+                <figcaption>Después</figcaption>
+              </figure>
+            </div>
+          </article>
+        </div>
+
+        <h4>Satisfacción final</h4>
+        <p>Promedio de 4 sobre 5. Los tres participantes calificaron con 4.</p>
+
+        <h4>Síntesis</h4>
+        <p>Se confirmaron 4 de los 5 problemas predichos en la inspección. Los problemas más graves de la prueba fueron el registro de pacientes que no se encontraba, la confusión entre paciente y cuidador al registrar por CI y la confusión entre crear y marcar rutinas. Los cambios de severidad alta (problemas 3 y 4) ya están aplicados en el wireframe corregido.</p>
+
+        <h3>Reflexión breve</h3>
+        <p>Notamos que la aplicación necesita tiempo de aprendizaje. Había opciones que para nosotros eran obvias, pero para los usuarios no. Una vez que encontraban cómo crear una rutina, volver a hacerlo o hacerlo en otra categoría les resultaba natural.</p>
+        <p>Algunas opciones estaban a un pequeño gesto de encontrarlas, y ahí nos hubiera gustado intervenir. En el mundo real no siempre vamos a poder ayudar, por eso el diseño tiene que ser claro por sí mismo.</p>
+        <p>Por eso decidimos aplicar cambios que tengan patrones claros, porque facilitan aprender nuevas tareas y responden a las dificultades que surgieron al buscar las opciones.</p>
+
+        <h3>Anexos</h3>
+        <ul>
+          <li><a href="anexos/sistema-de-diseno.pdf">Sistema de diseño (PDF)</a></li>
+          <li><a href="anexos/documento-del-proyecto.md">Documento fuente del proyecto (Markdown)</a></li>
+        </ul>
+        <p><a href="#portada">Volver al inicio de la página</a></p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor">
+      <p><strong>Integrantes:</strong> Adán Alvarez · Christopher Mendoza · Alan Valenzuela</p>
+      <p>Interacción Hombre-Máquina · Facultad de Ingeniería de la Universidad Nacional de Itapúa · 2026</p>
+    </div>
+  </footer>
+</body>
+</html>
