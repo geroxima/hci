@@ -134,7 +134,9 @@ eligieron la que desarrollaron.
 Elegimos una aplicación móvil debido a que seria la opción más rápida para el desarrollo y más práctica para el tipo de funcionalidad.
 Fueron consideradas distintas interfaces fue elegida una interfaz limpia y minimalista guiada por una barra inferior que diferencia diferentes secciones al usuario, así también un asistente vitual potencia con un chatbot de Inteligencia Artificial.
 
-[imágenes crazy 8]
+![Crazy 8s del equipo, hoja 1](../img/crazy8-1.png)
+![Crazy 8s del equipo, hoja 2](../img/crazy8-2.png)
+![Crazy 8s del equipo, hoja 3](../img/crazy8-3.png)
 
 5. Evolución del prototipo
 (Prototipar)
