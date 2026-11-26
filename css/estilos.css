@@ -220,7 +220,8 @@ figure figcaption {
 }
 
 .etapas,
-.antes-despues {
+.antes-despues,
+.showcase {
   display: grid;
   gap: 24px;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -228,7 +229,8 @@ figure figcaption {
 }
 
 .etapas figure,
-.antes-despues figure {
+.antes-despues figure,
+.showcase figure {
   margin: 0;
 }
 
